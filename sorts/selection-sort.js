@@ -2,8 +2,16 @@
  * Selection Sort
  *
  * Starting with the first element, loop through the array and find the
- * smallest value. Then swap the smallest value with the current iteration's
- * element.
+ * first smallest value. Once you find a value smaller then the previously
+ * smallest value, swap it with the current teration's element. Continue to the
+ * end of the array and repeat, starting with each next element
+ *
+ * [ 2, 9, 5, 5, 0 ]
+ * [ 0, 9, 5, 5, 2 ] <- swap 0 and 2
+ * [ 0, 5, 9, 5, 2 ] <- swap 9 and 5
+ * [ 0, 2, 9, 5, 5 ] <- swap 5 and 2
+ * [ 0, 2, 5, 9, 5 ] <- swap 5 and 9
+ * [ 0, 2, 5, 5, 9 ] <- swap 5 and 9
  */
 
 function selectionSort (list) {

@@ -4,6 +4,14 @@
  * On each iteration, the inner loop moves right to left, from the current
  * element down to 0. On each iteration, swap the current value with each
  * larger value to the left.
+ *
+ * [ 5, 2, 9, 5, 0 ]
+ * [ 2, 5, 9, 5, 0 ]
+ * [ 2, 5, 5, 9, 0 ] <-- Note the `0` begin moving backwards here
+ * [ 2, 5, 5, 0, 9 ]
+ * [ 2, 5, 0, 5, 9 ]
+ * [ 2, 0, 5, 5, 9 ]
+ * [ 0, 2, 5, 5, 9 ]
  */
 
 function insertionSort (list) {
